@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    border: 3px solid green;
+    grid-area: header;
+}
+
+header img {
+    width: 140px;
+    height: auto;
+    padding-left: 20px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 3px solid orange;
+    grid-area: nav;
+}
+
+#body-container {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, auto);
+    border: 5px solid black;
+    padding: 15px;
+    grid-template-areas: "header header header header header header header header header header"
+        "nav nav nav nav nav nav nav nav nav nav"
+        "main main main main main main aside aside aside aside"
+        "main main main main main main aside aside aside aside"
+        "footer footer footer footer footer footer footer footer footer footer"
+}       
+
+#main-container{
+    border: 3px solid gray;
+    padding: 10px;
+    grid-area: main;
+}
+
+#aside-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 3px solid purple;
+    padding: 10px;
+    grid-area: aside;
+}
+
+#aside-container p {
+    margin-top: -30px;
+}
+
+img {
+    /* display: grid; */
+    align-content: center;
+    width: 200px;
+    height: auto;
+    grid-area: star;
+
+}
+
+#aside-container > ol {
+    grid-area: list;
+}
+
+
+#actress-content, #actor-content {
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-columns: 2;
+    /* align-items: center; */
+    grid-template-areas: 
+        "star list"
+}
+
+
+/* .caption {
+    text-align: center;
+} */
+
+footer {
+    grid-area: footer;
+}
