@@ -123,10 +123,10 @@ img {
     #actor-content {
         display: flex;
         /* grid-template-rows: 1; */
-        /* grid-template-columns: 1; */
-        /* align-items: center; */
-        /* grid-template-areas:
+        grid-template-columns: 1;
+        align-items: center;
+        grid-template-areas:
             "star"
-            "list" */
+            "list"
     }
 }
