@@ -121,12 +121,12 @@ img {
     }  */
     #actress-content,
     #actor-content {
-        display: grid;
+        display: flex;
         /* grid-template-rows: 1; */
-        grid-template-columns: 1;
+        /* grid-template-columns: 1; */
         /* align-items: center; */
-        grid-template-areas:
+        /* grid-template-areas:
             "star"
-            "list"
+            "list" */
     }
 }
