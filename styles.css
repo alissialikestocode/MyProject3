@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    border: 3px solid green;
+    border: 3px solid lightpink;
     grid-area: header;
 }
 
@@ -28,18 +28,20 @@ header h1 {
 }
 
 nav {
+    background-color:bisque;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    border: 3px solid orange;
+    /* border: 3px solid lightpink; */
     grid-area: nav;
 }
 
 #home-container {
+    background-color: lightpink;
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(6, auto);
-    border: 5px solid black;
+    border: 5px solid beige;
     padding: 15px;
     grid-template-areas: "header header header header header header header header header header"
         "nav nav nav nav nav nav nav nav nav nav"
@@ -49,7 +51,7 @@ nav {
 }       
 
 #main-container{
-    border: 3px solid gray;
+    border: 3px solid beige;
     padding: 3%;
     grid-area: main;
 }
@@ -58,7 +60,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 3px solid purple;
+    border: 3px solid beige;
     padding: 3%;
     grid-area: aside;
 }
@@ -94,6 +96,7 @@ img {
     padding-right: 3%;
     padding-bottom: 3%;
     padding-left: 1%;
+    border: 3px solid lightpink;
 }
 
 .descriptions {
@@ -105,6 +108,7 @@ img {
 }
 
 #contact-me {
+    border: 3px solid lightpink;
     padding-top: 2%;
     text-align: center;
 }
