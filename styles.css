@@ -121,7 +121,7 @@ img {
     }  */
     #actress-content,
     #actor-content {
-        display: flex;
+        display: grid;
         /* grid-template-rows: 1; */
         grid-template-columns: 1;
         align-items: center;
