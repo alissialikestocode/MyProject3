@@ -91,10 +91,22 @@ img {
         "star list"
 }
 
-#synopses {
-    
+#synopses-container {
+    padding-right: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
+}
+
+.descriptions {
+    padding: 1%;
+}
+.video {
+    margin-top: 5%;
 }
 
 #footer {
+    padding-right: 3%;
+    padding-bottom: 3%;
+    padding-left: 3%;
     grid-area: footer;
 }
