@@ -116,15 +116,17 @@ img {
 }
 
 @media (max-width: 768px) {
-    /* #body-container {
+    #home-container {
         display: flex;
-    }  */
+        flex-direction: column;
+    } 
+
     #actress-content,
     #actor-content {
         display: grid;
         /* grid-template-rows: 1; */
         grid-template-columns: 1;
-        align-items: flex-start;
+        align-items: center;
         grid-template-areas:
             "star"
             "list"
