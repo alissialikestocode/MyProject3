@@ -6,28 +6,24 @@
 <html>
     <head>
         <link href="styles.css" rel="stylesheet">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
         <link rel="icon" type="image/x-icon" href="images/favicon.png">
         <title>Okay Drama Queen</title>
     </head>
     <body id="body-container">
-        <!-- <main id="main-container"> -->
             <header id="header-container">
                 <div id="header-logo">
-                <!-- <h1><img src="images/crown_orig.png" alt="A black crown with three peaks">Okay Drama Queen!</h1> -->
                 <img src="images/crown_orig.png" alt="A black crown with three peaks">
                 <h1>Okay Drama Queen!</h1>
                 </div>
-                <nav>
-                    <a>Home</a>
-                    <a>Synopses</a>
-                    <a>Contact Me</a>
+                <nav class="w3-bar w3-black">
+                    <button class="w3-bar-item w3-button" onclick="openTab('home-container')" >Home</button>
+                    <button class="w3-bar-item w3-button" onclick="openTab('synopses')">Synopses</button>
+                    <button class="w3-bar-item w3-button" onclick="openTab('contact-me')">Contact Me</button>
                 </nav>
             </header>
-            <!-- <nav>
-                <a>Home</a>
-                <a>Synopses</a>
-                <a>Contact Me</a>
-            </nav> -->
+
+        <section id="home-container" class="tabs">
             <main id="main-container">
                 <section id="modern">
                     <h2>Where to Start with K-Dramas: My Top 5 Recommendations</h2>
@@ -67,56 +63,68 @@
                         <li>Flower Crew: Joseon Marriage Agency</li>
                         <li>Twenty-Five Twenty-One</li>
                     </ol>
-                    </section>
-                    <section id="synopses">
-                    <h3>Synopses and Where to Watch</h3>
-                    <h4>Modern</h4>
-                    <p>Content here...</p>
-
-                    <h4>Historical</h4>
-                    <p>Content here...</p>
                 </section>
-        </main>
 
-        <aside id="aside-container">
-            <h2>Actors to Look For</h2>
-            <p>
-                If you see these actors in the promo it's <em>highly</em> likely to be good.
-            </p>
-            <section id="actresses">
-            <h3>Top 3 Female Actors</h3>
-            <section id="actress-content">
-            <figure class="caption">
-                <img src="images/park_boyoung.jpg" alt="A photo of Park Bo-Young smiling">
-                <figcaption>Park Bo-Young</figcaption>
-            </figure>
-            <ol>
-                <li>Park Bo-Young</li>
-                <li>Yeom Hye-Ran</li>
-                <li>Kim Tae-Ri</li>
-            </ol>
-            </section>
-            </section>
-            
-            <section id="actors">
-            <h3>Top 3 Male Actors</h3>
-            <section id="actor-content">
-            <figure class="caption">
-                <img src="images/nam_joo_hyuk3.jpg" rel="A picture of Nam Joo-Hyuk">
-                <figcaption>Nam Joo-Hyuk</figcaption>
-            </figure>
-            <ol>
-                <li>Nam Joo-Hyuk</li>
-                <li>Anh Hyo-Seop</li>
-                <li>Seo In-Guk</li>
-            </ol>
-            </section>
-            </section>
-            <h5>Actor Image Gallery</h5>
-        </aside>
-        <footer>
-            <h5>This is my footer</h5>
-        </footer>
+                <h5>Check out the Synopses section for more information about each k-drama</h5>
+            </main>
+            <aside id="aside-container">
+                <h2>Actors to Look For</h2>
+                <p>
+                    If you see these actors in the promo it's <em>highly</em> likely to be good.
+                </p>
+                <section id="actresses">
+                    <h3>Top 3 Female Actors</h3>
+                    <section id="actress-content">
+                        <figure class="caption">
+                            <img src="images/park_boyoung.jpg" alt="A photo of Park Bo-Young smiling">
+                            <figcaption>Park Bo-Young</figcaption>
+                        </figure>
+                        <ol>
+                            <li>Park Bo-Young</li>
+                            <li>Yeom Hye-Ran</li>
+                            <li>Kim Tae-Ri</li>
+                        </ol>
+                    </section>
+                </section>
+                <section id="actors">
+                    <h3>Top 3 Male Actors</h3>
+                    <section id="actor-content">
+                    <figure class="caption">
+                        <img src="images/nam_joo_hyuk3.jpg" rel="A picture of Nam Joo-Hyuk">
+                        <figcaption>Nam Joo-Hyuk</figcaption>
+                    </figure>
+                    <ol>
+                        <li>Nam Joo-Hyuk</li>
+                        <li>Anh Hyo-Seop</li>
+                        <li>Seo In-Guk</li>
+                    </ol>
+                    </section>
+                </section>
+                <h5>Actor Image Gallery</h5>
+            </aside>
+        </section>
+        <section id="synopses" class="tabs" style="display:none"> 
+            <h3>Synopses and Where to Watch</h3>
+            <h4>Modern</h4>
+            <p>Content here...</p>
+
+            <h4>Historical</h4>
+            <p>Content here...</p>
+        </section>
+        <section id="contact-me" class="tabs" style="display:none">
+            <footer>
+                <h5>"Let's be social! You can find me in the CS building every Tuesday and Thursday Room 305 (as long as there's school that day)"</h5>
+            </footer>
+        </section>
+        <script>
+            function openTab(tabName) {
+                    var i;
+                    var x = document.getElementsByClassName("tabs");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    document.getElementById(tabName).style.display = "block";
+                }
+        </script>
     </body>
-
 </html> 

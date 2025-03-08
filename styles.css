@@ -35,7 +35,8 @@ nav {
     grid-area: nav;
 }
 
-#body-container {
+/* #body-container { */
+#home-container {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(6, auto);
@@ -90,11 +91,6 @@ img {
         "star list"
 }
 
-
-/* .caption {
-    text-align: center;
-} */
-
-footer {
+#footer {
     grid-area: footer;
 }
