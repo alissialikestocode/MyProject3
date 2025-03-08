@@ -124,7 +124,7 @@ img {
         display: grid;
         /* grid-template-rows: 1; */
         grid-template-columns: 1;
-        align-items: center;
+        align-items: flex-start;
         grid-template-areas:
             "star"
             "list"
