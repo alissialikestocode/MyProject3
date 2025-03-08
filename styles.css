@@ -14,7 +14,7 @@
     justify-content: flex-start;
     border: 3px solid lightpink;
     grid-area: header;
-    font-family: "Modak", sans-serif;
+    font-family: "Modak", Georgia, 'Times New Roman', Times, serif
 }
 
 #header-logo {
